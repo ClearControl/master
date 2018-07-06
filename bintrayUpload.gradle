@@ -16,16 +16,16 @@ if(hasProperty('bintray_user') && hasProperty('bintray_key') )
     
     pkg {
       // bintray repo name:
-      repo = ext.bintray_repo
+      repo = project.ext.bintray_repo
       
       //An optional organization name when the repo belongs to one of the user's orgs
-      userOrg = ext.bintray_userorg 
+      userOrg = project.ext.bintray_userorg 
       
       // package name:
-      name = ext.bintray_packagename
+      name = project.ext.bintray_packagename
       
       // package description:
-      desc = ext.bintray_packagename
+      desc = project.ext.bintray_packagename
       
       licenses = ['LGPL-3.0']
       publicDownloadNumbers = true
