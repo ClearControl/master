@@ -1,7 +1,7 @@
 
 // Current release versions for Clear* projects:
 
-def versionsMap = [:]
+ext.versionsMap = [:]
 
 versionsMap['clearcontrol_lightsheet'] = "1.27.1"
 versionsMap['clearcontrol']            = "0.16.4"
