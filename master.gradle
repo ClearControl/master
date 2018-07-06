@@ -3,9 +3,9 @@
 
 def versionsMap = [:]
 
-versionsMap['clearcontrol_lightsheet'] = "1.0.9"
-versionsMap['clearcontrol']            = "0.9.0"
-versionsMap['clearcl']                 = "0.5.2"
+versionsMap['clearcontrol_lightsheet'] = "1.27.1"
+versionsMap['clearcontrol']            = "0.16.4"
+versionsMap['clearcl']                 = "0.5.9"
 versionsMap['fastfuse']                = "0.6.4"
 versionsMap['symbrio']                 = "0.8.6"
 versionsMap['dcamj']                   = "2.1.6"
