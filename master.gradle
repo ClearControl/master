@@ -10,7 +10,7 @@ ext {
   versionsMap['fastfuse']                = "0.6.4"
   versionsMap['symbrio']                 = "0.8.6"
   versionsMap['dcamj']                   = "2.1.6"
-  versionsMap['coremem']                 = "0.4.4"
+  versionsMap['coremem']                 = "0.4.5"
   versionsMap['clearaudio']              = "1.0.2"
   versionsMap['aptj']                    = "0.2.3"
   versionsMap['dockfx']                  = "0.1.12"
