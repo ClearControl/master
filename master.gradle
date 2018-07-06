@@ -1,18 +1,20 @@
 
 // Current release versions for Clear* projects:
 
-ext.versionsMap = [:]
+ext {
+  versionsMap = [:]
 
-versionsMap['clearcontrol_lightsheet'] = "1.27.1"
-versionsMap['clearcontrol']            = "0.16.4"
-versionsMap['clearcl']                 = "0.5.9"
-versionsMap['fastfuse']                = "0.6.4"
-versionsMap['symbrio']                 = "0.8.6"
-versionsMap['dcamj']                   = "2.1.6"
-versionsMap['coremem']                 = "0.4.4"
-versionsMap['clearaudio']              = "1.0.2"
-versionsMap['aptj']                    = "0.2.3"
-versionsMap['dockfx']                  = "0.1.12"
-versionsMap['asdkj']                   = "1.0.1"
-versionsMap['mirao52j']                = "1.0.1"
-versionsMap['nirioj']                  = "1.0.2"
+  versionsMap['clearcontrol_lightsheet'] = "1.27.1"
+  versionsMap['clearcontrol']            = "0.16.4"
+  versionsMap['clearcl']                 = "0.5.9"
+  versionsMap['fastfuse']                = "0.6.4"
+  versionsMap['symbrio']                 = "0.8.6"
+  versionsMap['dcamj']                   = "2.1.6"
+  versionsMap['coremem']                 = "0.4.4"
+  versionsMap['clearaudio']              = "1.0.2"
+  versionsMap['aptj']                    = "0.2.3"
+  versionsMap['dockfx']                  = "0.1.12"
+  versionsMap['asdkj']                   = "1.0.1"
+  versionsMap['mirao52j']                = "1.0.1"
+  versionsMap['nirioj']                  = "1.0.2"
+}
