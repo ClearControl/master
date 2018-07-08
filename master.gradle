@@ -24,9 +24,9 @@ ext {
   //  versionsMap['symbrio']                = "1.0.1-LR"
   // 
   
-  localfile = file(project.gradle.gradleUserHomeDir,'local.gradle')
-  if(localfile.exists()){
-    apply from: localfile
+  localfilename = project.gradle.gradleUserHomeDir.getAbsolutePath()+'/local.gradle'
+  if(file(localfilename).exists()){
+    apply from: localfilename
   }
   
 }
