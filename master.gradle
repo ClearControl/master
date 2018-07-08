@@ -18,7 +18,7 @@ ext {
   versionsMap['mirao52j']                = "1.0.1"
   versionsMap['nirioj']                  = "1.0.2"
   
-  localfilename= project-cache-dir+'\local.gradle'
+  localfilename= project-cache-dir+'/local.gradle'
   if(file(localfilename).exists()){
     apply from: localfilename
   }
