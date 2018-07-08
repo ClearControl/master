@@ -4,24 +4,48 @@
 ext {
   versionsMap = [:]
 
-  versionsMap['clearcontrol_lightsheet'] = "1.27.1"
-  versionsMap['clearcontrol']            = "0.16.4"
-  versionsMap['clearcl']                 = "0.5.9"
-  versionsMap['fastfuse']                = "0.6.4"
-  versionsMap['symbrio']                 = "0.8.6"
-  versionsMap['dcamj']                   = "2.1.6"
+  // the dependency graph is layed out in 'levels' that represent their dependency depth: 
+  // direct dependency is given, dependencies are transitive.
+
+  // Level 0 (don't depend on any other lib): 
   versionsMap['coremem']                 = "0.4.5"
-  versionsMap['clearaudio']              = "1.0.2"
-  versionsMap['aptj']                    = "0.2.3"
   versionsMap['dockfx']                  = "0.1.12"
+  versionsMap['cleargl']                 = "2.2.1"
+  versionsMap['clearaudio']              = "1.0.2"
+
+  // devices adapters:
+  versionsMap['aptj']                    = "0.2.3"  
   versionsMap['asdkj']                   = "1.0.1"
   versionsMap['mirao52j']                = "1.0.1"
+  versionsMap['dmp40j']                  = "0.1.0"
   versionsMap['nirioj']                  = "1.0.2"
+  versionsMap['andorsdkj']               = "0.1.0"
+    
+  // Level 1:
+  versionsMap['halcyon']                 = "0.3.7"  // depends directly on dockfx
+  
+  // device adapters:
+  versionsMap['dcamj']                   = "2.1.6"  // depends directly on coremem
+  versionsMap['clearcl']                 = "0.5.9"  // depends directly on coremem
+  
+  // Level 2:
+  versionsMap['clearvolume']             = "1.4.1"  // depends directly on clearcl, clearaudio, cleargl
+  versionsMap['symbrio']                 = "0.8.6"  // depends directly on clearcl
+  
+  // Level 3:
+  versionsMap['fastfuse']                = "0.6.4"  // depends directly on symbryo
+  
+  // Level 4:
+  versionsMap['clearcontrol']            = "0.16.4" // depends directly on halcyon, clearvolume, fastfuse, and _all_ devices adapters
+    
+  // Level 5:
+  versionsMap['clearcontrol_lightsheet'] = "1.27.1" // depends directly on clearcontrol, only
+
   
   // Loads locale file: ~/.gradle/local.gradle
   // You can override versions locally for example:
   // 
-  //  versionsMap['symbrio']                = "1.0.1-LR"
+  //  versionsMap['symbrio']             = "1.0.1-LR"
   // 
   
   localfilename = project.gradle.gradleUserHomeDir.getAbsolutePath()+'/local.gradle'
