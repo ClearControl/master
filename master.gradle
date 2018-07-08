@@ -19,7 +19,10 @@ ext {
   versionsMap['nirioj']                  = "1.0.2"
   
   // Loads locale file: ~/.gradle/local.gradle
-  // You can override versions locally.
+  // You can override versions locally for example:
+  // 
+  //  versionsMap['symbrio']                = "1.0.1-LR"
+  // 
   
   localfilename= project.gradle.gradleUserHomeDir+'/local.gradle'
   if(file(localfilename).exists()){
