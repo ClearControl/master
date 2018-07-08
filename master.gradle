@@ -21,7 +21,7 @@ ext {
   // Loads locale file: ~/.gradle/local.gradle
   // You can override versions locally.
   
-  localfilename= project-cache-dir+'/local.gradle'
+  localfilename= project.gradle.gradleUserHomeDir+'/local.gradle'
   if(file(localfilename).exists()){
     apply from: localfilename
   }
