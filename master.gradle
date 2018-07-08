@@ -18,8 +18,12 @@ ext {
   versionsMap['mirao52j']                = "1.0.1"
   versionsMap['nirioj']                  = "1.0.2"
   
+  // Loads locale file: ~/.gradle/local.gradle
+  // You can override versions locally.
+  
   localfilename= project-cache-dir+'/local.gradle'
   if(file(localfilename).exists()){
     apply from: localfilename
   }
+  
 }
