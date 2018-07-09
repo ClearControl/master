@@ -56,9 +56,11 @@ ext {
   
 }
 
-// Other stuff:
-
+// Git hooks:
 apply from: 'https://github.com/ClearControl/master/blob/master/installGitHooks?raw=true'
+
+// Bintray upload:
+apply from: 'https://github.com/ClearControl/master/blob/master/bintrayUpload.gradle?raw=true'
 
 
 //***********************************************************************************
