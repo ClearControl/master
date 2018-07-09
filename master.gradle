@@ -54,3 +54,8 @@ ext {
   }
   
 }
+
+// Other stuff:
+
+apply from: 'https://github.com/ClearControl/master/blob/master/installGitHooks?raw=true'
+  
