@@ -59,4 +59,27 @@ ext {
 // Other stuff:
 
 apply from: 'https://github.com/ClearControl/master/blob/master/installGitHooks?raw=true'
+
+
+//***********************************************************************************
+// SPOTLESS:
+
+spotless {
+    java {
+        importOrder(['java', 'javax', 'com', 'org'])
+        removeUnusedImports() // removes any unused imports
+        eclipseFormatFile 'codeformat.eclipse.xml'  
+    }
+}
+
+task downloadCodeFormat(type: Download) {
+    src 'https://github.com/ClearControl/master/blob/master/codeformat.eclipse.xml?raw=true'
+    dest new File(".", "codeformat.eclipse.xml")
+    overwrite false
+    onlyIfModified true
+    tempAndMove true
+}
+
+build.dependsOn(downloadCodeFormat)
+
   
