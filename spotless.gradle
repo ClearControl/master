@@ -18,4 +18,4 @@ task downloadCodeFormat(type: Download) {
     tempAndMove true
 }
 
-build.dependsOn(downloadCodeFormat)
+spotlessJava.dependsOn(downloadCodeFormat)
