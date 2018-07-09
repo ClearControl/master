@@ -2,6 +2,7 @@
 // Current release versions for Clear* projects:
 
 ext {
+  groupname = "net.clearcontrol"
   versionsMap = [:]
 
   // the dependency graph is layed out in 'levels' that represent their dependency depth: 
