@@ -7,6 +7,8 @@ ext {
 
   // the dependency graph is layed out in 'levels' that represent their dependency depth: 
   // direct dependency is given, dependencies are transitive.
+  // Dependencies in the same level do not depend on each other.
+  // When editiong this file, be carefull that GitHub does not always instantly reflect the changes.
 
   // Level 0 (don't depend on any other lib): 
   versionsMap['coremem']                 = "0.4.5"
@@ -27,7 +29,7 @@ ext {
   
   // device adapters:
   versionsMap['dcamj']                   = "2.1.6"  // depends directly on coremem
-  versionsMap['clearcl']                 = "0.5.9"  // depends directly on coremem
+  versionsMap['clearcl']                 = "0.6.0"  // depends directly on coremem
   
   // Level 2:
   versionsMap['clearvolume']             = "1.4.1"  // depends directly on clearcl, clearaudio, cleargl
