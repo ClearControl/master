@@ -18,5 +18,7 @@ task downloadCodeFormat(type: Download) {
     tempAndMove true
 }
 
+// Making sure that we download the file:
 clean.dependsOn(downloadCodeFormat)
-spotlessJava.dependsOn(downloadCodeFormat)
+compileJava.dependsOn(downloadCodeFormat)
+assemble.dependsOn(downloadCodeFormat)
