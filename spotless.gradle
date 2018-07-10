@@ -2,17 +2,19 @@
 //***********************************************************************************
 // SPOTLESS:
 
+codeformatfile = new File(buildDir,'codeformat.eclipse.xml')
+
 spotless {
     java {
         importOrder(['java', 'javax', 'com', 'org'])
         removeUnusedImports() // removes any unused imports
-        eclipseFormatFile 'codeformat.eclipse.xml'  
+        eclipseFormatFile codeformatfile  
     }
 }
 
 task downloadCodeFormat(type: Download) {
     src 'https://github.com/ClearControl/master/blob/master/codeformat.eclipse.xml?raw=true'
-    dest new File(".", "codeformat.eclipse.xml")
+    dest codeformatfile
     overwrite false
     onlyIfModified true
     tempAndMove true
