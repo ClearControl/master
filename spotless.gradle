@@ -22,6 +22,5 @@ task downloadCodeFormat(type: Download) {
 }
 
 // Making sure that we download the file:
-clean.dependsOn(downloadCodeFormat)
 compileJava.dependsOn(downloadCodeFormat)
 assemble.dependsOn(downloadCodeFormat)
