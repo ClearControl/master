@@ -3,6 +3,7 @@
 // SPOTLESS:
 
 project.ext.codeformatfile = new File(buildDir,'codeformat.eclipse.xml')
+println project.ext.codeformatfile
 
 spotless {
     java {
