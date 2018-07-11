@@ -39,10 +39,10 @@ ext {
   versionsMap['fastfuse']                = "0.6.4"  // depends directly on symbryo
   
   // Level 4:
-  versionsMap['clearcontrol']            = "0.16.4" // depends directly on halcyon, clearvolume, fastfuse, and _all_ devices adapters
+  versionsMap['clearcontrol']            = "0.16.6" // depends directly on halcyon, clearvolume, fastfuse, and _all_ devices adapters
     
   // Level 5:
-  versionsMap['clearcontrol_lightsheet'] = "1.27.1" // depends directly on clearcontrol, only
+  versionsMap['clearcontrol_lightsheet'] = "1.27.3" // depends directly on clearcontrol, only
 
   
   // Loads locale file: ~/.gradle/local.gradle
