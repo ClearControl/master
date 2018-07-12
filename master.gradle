@@ -33,7 +33,7 @@ ext {
   
   // Level 2:
   versionsMap['clearvolume']             = "1.4.1"  // depends directly on clearcl, clearaudio, cleargl
-  versionsMap['symbrio']                 = "0.9.0"  // depends directly on clearcl
+  versionsMap['simbryo']                 = "0.9.0"  // depends directly on clearcl
   
   // Level 3:
   versionsMap['fastfuse']                = "0.6.4"  // depends directly on symbryo
