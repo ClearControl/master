@@ -29,6 +29,8 @@ if(hasProperty('bintray_user') && hasProperty('bintray_key') )
       
       licenses = ['LGPL-3.0']
       publicDownloadNumbers = true
+      
+      vcsUrl = bintray_vcsurl
 
       version {
         //Bintray logical version name
