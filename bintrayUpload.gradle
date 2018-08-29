@@ -33,7 +33,7 @@ if(hasProperty('bintray_user') && hasProperty('bintray_key') )
       version {
         //Bintray logical version name
         name = project.ext.versionsMap[project.name] 
-        desc = 'veersion '+project.ext.versionsMap[project.name]
+        desc = 'version '+project.ext.versionsMap[project.name]
         released  = new java.util.Date()
         vcsTag = project.ext.versionsMap[project.name]         
       }
