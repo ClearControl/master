@@ -58,7 +58,7 @@ ext {
   
 }
 
-ext.version = { name -> project.ext.versionsMap[name] }
+ext.depver = { name -> project.ext.versionsMap[name] }
 
 // Git hooks:
 apply from: 'https://github.com/ClearControl/master/blob/master/installGitHooks?raw=true'
