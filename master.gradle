@@ -60,6 +60,7 @@ ext {
 
 def version(name)
 {
+  println(project.ext.versionsMap)
   return project.ext.versionsMap[name]
 }
 
