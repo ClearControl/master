@@ -13,7 +13,7 @@ ext {
   // Level 0 (don't depend on any other lib): 
   versionsMap['coremem']                 = "0.4.5"
   versionsMap['dockfx']                  = "0.1.12"
-  versionsMap['cleargl']                 = "2.2.1"
+  versionsMap['cleargl']                 = "2.2.1"  // Ulrik Guenter (skalarproduktraum) is currently maintaing this project and releases versions
   versionsMap['clearaudio']              = "1.0.2"
 
   // devices adapters:
