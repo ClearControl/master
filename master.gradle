@@ -60,7 +60,6 @@ ext {
 
 def depver(name)
 {
-  println(project.ext.versionsMap)
   return project.ext.versionsMap[name]
 }
 
