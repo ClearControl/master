@@ -58,10 +58,7 @@ ext {
   
 }
 
-def depver(name)
-{
-  return project.ext.versionsMap[name]
-}
+ext.version = { name -> project.ext.versionsMap[name] }
 
 // Git hooks:
 apply from: 'https://github.com/ClearControl/master/blob/master/installGitHooks?raw=true'
