@@ -23,6 +23,7 @@ ext {
   versionsMap['dmp40j']                  = "0.1.0"
   versionsMap['nirioj']                  = "1.0.2"
   versionsMap['andorsdkj']               = "0.1.0"
+  versionsMap['ecc100j']                 = "1.0.0"
     
   // Level 1:
   versionsMap['halcyon']                 = "0.3.7"  // depends directly on dockfx
