@@ -2,7 +2,7 @@
 //***********************************************************************************
 // SPOTLESS:
 
-project.ext.codeformatfile = (new File(buildDir,'codeformat.eclipse.xml')).getAbsolutePath()
+project.ext.codeformatfile = (new File(projectDir,'/gradle/codeformat.eclipse.xml')).getAbsolutePath()
 
 spotless {
     java {
