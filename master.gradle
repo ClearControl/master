@@ -65,7 +65,7 @@ project.ext.githooksfile = (new File(projectDir,'/gradle/installGitHooks')).getA
 project.ext.bintrayfile  = (new File(projectDir,'/gradle/bintrayUpload.gradle')).getAbsolutePath()
 project.ext.spotlessfile = (new File(projectDir,'/gradle/spotless.gradle')).getAbsolutePath()
 
-// Download master gradle file:
+// Download files:
 try {
     download {
     src 'https://github.com/ClearControl/master/blob/master/installGitHooks?raw=true'
