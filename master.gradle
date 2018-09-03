@@ -18,7 +18,7 @@ ext {
 
   // devices adapters:
   versionsMap['aptj']                    = "0.2.3"  
-  versionsMap['asdkj']                   = "1.0.1"
+  versionsMap['asdkj']                   = "1.0.2"
   versionsMap['mirao52j']                = "1.0.1"
   versionsMap['dmp40j']                  = "0.1.0"
   versionsMap['nirioj']                  = "1.0.2"
