@@ -1,3 +1,6 @@
+
+bintrayUpload.dependsOn clean
+
 if(hasProperty('bintray_user') && hasProperty('bintray_key') )
 {
   bintray {
