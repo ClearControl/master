@@ -70,7 +70,7 @@ try {
     download {
     src 'https://github.com/ClearControl/master/blob/master/installGitHooks?raw=true'
     dest project.ext.githooksfile
-    overwrite true
+    overwrite false
     onlyIfModified true
     tempAndMove true
     }
@@ -78,7 +78,7 @@ try {
     download {
     src 'https://github.com/ClearControl/master/blob/master/bintrayUpload.gradle?raw=true'
     dest project.ext.bintrayfile
-    overwrite true
+    overwrite false
     onlyIfModified true
     tempAndMove true
     }
@@ -86,7 +86,7 @@ try {
     download {
     src 'https://github.com/ClearControl/master/blob/master/spotless.gradle?raw=true'
     dest project.ext.spotlessfile
-    overwrite true
+    overwrite false
     onlyIfModified true
     tempAndMove true
     }
