@@ -15,7 +15,7 @@ spotless {
 task downloadCodeFormat(type: Download) {
     src 'https://github.com/ClearControl/master/blob/master/codeformat.eclipse.xml?raw=true'
     dest project.ext.codeformatfile
-    overwrite false
+    overwrite true
     onlyIfModified true
     tempAndMove true
 }
