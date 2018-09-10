@@ -52,7 +52,7 @@ ext {
   // Loads locale file: ~/.gradle/local.gradle
   // You can override versions locally for example:
   // 
-  //  versionsMap['symbrio']             = "1.0.1-LR"
+  //  ext/versionsMap['symbrio']         = "1.0.1-LR"
   // 
   
   localfilename = project.gradle.gradleUserHomeDir.getAbsolutePath()+'/local.gradle'
