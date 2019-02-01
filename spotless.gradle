@@ -21,10 +21,10 @@ spotless {
     java {
         importOrder(['java', 'javax', 'com', 'org'])
         removeUnusedImports() // removes any unused imports
-        eclipseFormatFile project.ext.codeformatfile  
+        eclipseFormatFile project.ext.codeformatfile
     }
 }
 
 // Making sure that we download the file:
-compileJava.dependsOn(downloadCodeFormat)
-assemble.dependsOn(downloadCodeFormat)
+//compileJava.dependsOn(downloadCodeFormat)
+//assemble.dependsOn(downloadCodeFormat)
